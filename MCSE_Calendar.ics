@@ -6,14 +6,23 @@ PRODID:-//MCSE_NAPTAR//HU
 BEGIN:VEVENT
 UID:20250422-Lyridak_Maximum
 SUMMARY:Lyridák maximum
-DESCRIPTION: Az Áprilisi Lyridák (006 LYR) meteorraj maximuma. Aktivitás: ápr. 14-30., ZHR=18, v=49km/s
+DESCRIPTION:Az Áprilisi Lyridák (006 LYR) meteorraj maximuma. Aktivitás: ápr. 14-30., ZHR=18, v=49km/s
 LOCATION: Egész Magyarország
 DTSTART:20250422T113000Z
 DTEND:20250422T113000Z
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20250915-juupiter-aphelion
+UID:20250424-Merkur-Dychotomia
+SUMMARY:A Merkúr dichotómiája
+DESCRIPTION:A Merkúr dichotómiája
+LOCATION: Egész Magyarország
+DTSTART:20250424T13410Z
+DTEND:202504242T134100Z
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20250915-Jupiter-aphelion
 SUMMARY:Jupiter Naptól legtávolabbi pontján (aphélium)
 DESCRIPTION:Jupiter eléri naptól legtávolabbi pontját pályáján.
 LOCATION: Egész Magyarország
