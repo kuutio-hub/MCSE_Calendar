@@ -2,12 +2,23 @@ BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:-//MCSE_NAPTAR//HU
+
+BEGIN:VEVENT
+UID:20250422-Lyridak_Maximum
+SUMMARY:Lyridák maximum
+DESCRIPTION: Az Áprilisi Lyridák (006 LYR) meteorraj maximuma. Aktivitás: ápr. 14-30., ZHR=18, v=49km/s
+LOCATION: Egész Magyarország
+DTSTART:20250422T133000Z
+DTEND:20250422T133000Z
+END:VEVENT
+
 BEGIN:VEVENT
 UID:20250915-juupiter-aphelion
 SUMMARY:Jupiter Naptól legtávolabbi pontján (aphélium)
-DESCRIPTION:Jupiter eléri naptól legtávolabbi pontját pályáján..
+DESCRIPTION:Jupiter eléri naptól legtávolabbi pontját pályáján.
 LOCATION: Egész Magyarország
 DTSTART:20250915T000000Z
 DTEND:20250915T000000Z
 END:VEVENT
+
 END:VCALENDAR
