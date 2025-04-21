@@ -4,10 +4,10 @@ CALSCALE:GREGORIAN
 PRODID:-//MCSE_NAPTAR//HU
 BEGIN:VEVENT
 UID:20250915-juupiter-aphelion
-SUMMARX: Jupiter Naptól legtávolabbi pontján (aphélium)
+SUMMARY: Jupiter Naptól legtávolabbi pontján (aphélium)
 DESCRIPTIONJupiter eléri naptól legtávolabbi pontját pályáján..
 LOCATION: Egész Magyarország
-DSTART:20250915T000000Z
+DTSTART:20250915T000000Z
 DTEND:20250915T000000Z
 END:VEVENT
 ENDVCALENDAR
