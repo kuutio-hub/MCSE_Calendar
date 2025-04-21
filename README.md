@@ -1,2 +1,2 @@
 # MCSE_Calendar
-MCSE évkönv alapján frissíthető naptár
+MCSE évkönv alapján készített online naptár.
