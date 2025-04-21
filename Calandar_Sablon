@@ -1,0 +1,70 @@
+# Az iCalendar fájl fejlécének kezdete. Meghatározza a fájl típusát.
+BEGIN:VCALENDAR
+# Verziószám: Az iCalendar formátum verziója (általában 2.0).
+VERSION:2.0
+# Naptári skála: A Gergely-naptár használata.
+CALSCALE:GREGORIAN
+# Azonosító: A naptár készítőjének neve vagy az alkalmazás neve.
+PRODID:-//MCSE_NAPTAR//HU
+
+# Ez a blokk a magyar időzónát (Europe/Budapest) határozza meg.
+BEGIN:VTIMEZONE
+TZID:Europe/Budapest
+# Téli időszámítás (Central European Time - CET).
+BEGIN:STANDARD
+DTSTART:19701025T020000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+# Nyári időszámítás (Central European Summer Time - CEST).
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+# Időzóna blokk vége.
+END:VTIMEZONE
+
+# Események blokkja kezdődik.
+BEGIN:VEVENT
+# Egyedi azonosító minden eseményhez. Ez garantálja az események egyediségét.
+UID:20250422-Lyridak_Maximum
+# Az esemény címe, amely rövid összefoglalást ad az eseményről.
+SUMMARY:Lyridák maximum
+# Az esemény részletesebb leírása, amely további információkat adhat.
+DESCRIPTION:Az Áprilisi Lyridák maximumának időpontja.
+# Az esemény helyszíne. Leírja, hol zajlik az esemény.
+LOCATION:Egész Magyarország
+# Az esemény kezdési időpontja. Az UTC időt használja (Z végződés jelzi, hogy UTC).
+DTSTART:20250422T113000Z
+# Az esemény befejezési időpontja. Szintén UTC-ben van megadva.
+DTEND:20250422T123000Z
+# Opcionális kép URL-je. Megadható vizuális elemként az eseményhez.
+IMAGE;VALUE=URI:""
+# Opcionális online konferencia linkje, ha az esemény virtuálisan zajlik.
+CONFERENCE;VALUE=URI:""
+# Opcionális színkód az esemény vizuális kiemeléséhez.
+COLOR:""
+# Melléklet csatolása az eseményhez, például dokumentumok vagy képek.
+ATTACH:""
+# Az esemény kategóriái (pl. munka, szabadidő). Használható a rendezéshez.
+# CATEGORIES:Meteorraj
+# Ismétlődő szabályok, például heti vagy havi ismétlődés.
+# RRULE:FREQ=WEEKLY;COUNT=10
+# Riasztás blokkja kezdődik. Beállítható emlékeztető az eseményhez.
+BEGIN:VALARM
+# Az esemény előtt megjelenő riasztás időpontja (pl. 15 perccel korábban).
+TRIGGER:-PT15M
+# A riasztás típusa (pl. megjelenít egy értesítést).
+ACTION:DISPLAY
+# A riasztás szövege, amely az emlékeztető üzenetet tartalmazza.
+DESCRIPTION:Emlékeztető: Lyridák maximum
+# Riasztás blokk vége.
+END:VALARM
+# Esemény blokk vége.
+END:VEVENT
+
+# Ez a fájl vége, amely lezárja az iCalendar dokumentumot.
+END:VCALENDAR
